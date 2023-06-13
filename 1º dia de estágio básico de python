@@ -1,0 +1,569 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "58f353cb",
+   "metadata": {
+    "scrolled": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "1\n",
+      "2\n",
+      "2\n",
+      "3\n",
+      "3\n",
+      "4\n",
+      "4\n",
+      "5\n",
+      "5\n",
+      "6\n",
+      "1\n",
+      "done looping\n",
+      "2\n",
+      "1\n",
+      "3\n",
+      "2\n",
+      "4\n",
+      "3\n",
+      "5\n",
+      "4\n",
+      "6\n",
+      "5\n",
+      "7\n",
+      "2\n",
+      "done looping\n",
+      "3\n",
+      "1\n",
+      "4\n",
+      "2\n",
+      "5\n",
+      "3\n",
+      "6\n",
+      "4\n",
+      "7\n",
+      "5\n",
+      "8\n",
+      "3\n",
+      "done looping\n",
+      "4\n",
+      "1\n",
+      "5\n",
+      "2\n",
+      "6\n",
+      "3\n",
+      "7\n",
+      "4\n",
+      "8\n",
+      "5\n",
+      "9\n",
+      "4\n",
+      "done looping\n",
+      "5\n",
+      "1\n",
+      "6\n",
+      "2\n",
+      "7\n",
+      "3\n",
+      "8\n",
+      "4\n",
+      "9\n",
+      "5\n",
+      "10\n",
+      "5\n",
+      "done looping\n"
+     ]
+    }
+   ],
+   "source": [
+    "for (i) in [1, 2, 3, 4, 5]:\n",
+    "    print (i)\n",
+    "    for  (j) in [1, 2, 3, 4, 5]:\n",
+    "        print (j)\n",
+    "        print ((i)+(j))\n",
+    "    print (i)\n",
+    "    print (\"done looping\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "a4c6a0c7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def double (x):\n",
+    "    return x * 2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "d60bd3d1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "double(2)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "52fe94ae",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello\n",
+      "filipe\n"
+     ]
+    }
+   ],
+   "source": [
+    "def my_print(message=\"filipe\"):\n",
+    "    print(message)\n",
+    "    \n",
+    "my_print(\"hello\")\n",
+    "my_print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "525b1fe0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "tab_string = \"/r\"\n",
+    "len(tab_string)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "303b9090",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "not_tab_string = r\"/t\"\n",
+    "len(not_tab_string)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "21c89844",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "unexpected indent (543754526.py, line 2)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"/var/folders/b6/k9pfwqqj2ld88vm2tn1k7s600000gp/T/ipykernel_35137/543754526.py\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    heterogeneous_list = [\"string\", 0.1, True]\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m unexpected indent\n"
+     ]
+    }
+   ],
+   "source": [
+    "integer_list = [1, 2, 3]\n",
+    "    heterogeneous_list = [\"string\", 0.1, True]\n",
+    "    list_of_lists = len(integer_list)\n",
+    "    list_sum = sum(integr_list)\n",
+    "    \n",
+    "    x = list(range(10))\n",
+    "    zero = [0]\n",
+    "    one = x[1]\n",
+    "    nine = x[-1]\n",
+    "    eight = x[-2]\n",
+    "    x[0] = -1\n",
+    "    \n",
+    "    first_three = x[:3]\n",
+    "    three_to_end = x[3:]\n",
+    "    one_to_four = x[1:5]\n",
+    "    last_three = x[-3:]\n",
+    "    without_first_and_last = x[1:-1]\n",
+    "    copy_of_x =x[:]\n",
+    "    \n",
+    "    1 in [1, 2, 3]\n",
+    "    0 in [1, 2, 3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "3afacb2f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "integer_list = [1, 2, 3]\n",
+    "heterogeneous_list = [\"string\", 0.1, True]\n",
+    "list_of_lists = len(integer_list)\n",
+    "list_sum = sum(integer_list) #soma tudo o que estiver na lista\n",
+    "\n",
+    "x = list(range(10)) #cria uma lista de numeros de 0 a 9\n",
+    "zero = x[0] #atribui a primeira posição  da lista à variavel \"zero\"\n",
+    "one = x[1] #atribui a segunda posição  da lista à variavel \"one\"\n",
+    "nine = x[-1] #atribui a nona posição  da lista à variavel \"nine\" porque quanda há um numero negativo ele vai buscar os numeros de trás para a frente\n",
+    "eight = x[-2] #atribui a oitava posição  da lista à variavel \"eight\"\n",
+    "x[0] = -1 #atribui ao numero 0 o valor -1\n",
+    "\n",
+    "first_three = x[:3] #atribui os primeiros numeros da lista\n",
+    "three_to_end = x[3:] #atribui os numeros para a frente do 3\n",
+    "one_to_four = x[1:5] #atribui a variavel one_to_four entre 1 a 4\n",
+    "last_three = x[-3:] #atribui a variavel last_three os ultimos numros da lista\n",
+    "without_first_and_last = x[1:-1] #atribui a variavel without_first_and_last todos os numeros menos o primeiro e o ultimo\n",
+    "copy_of_x =x[:] #atribui todos os numeros da lista\n",
+    "\n",
+    "1 in [1, 2, 3]\n",
+    "0 in [1, 2, 3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "13e10d7e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[-1, 1, 2]"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "first_three"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "633c0508",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3, 4, 5, 6, 7, 8, 9]"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "three_to_end"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "5b2fc93c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[-1, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "0d7b5d79",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "cannot modify a tuple\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_list = [1, 2]\n",
+    "my_tuple = (1, 2)\n",
+    "other_tuple = 3, 4\n",
+    "my_list[1] = 3\n",
+    "\n",
+    "try :\n",
+    "    my_tuple[1] = 3\n",
+    "except TypeError:\n",
+    "    print(\"cannot modify a tuple\")\n",
+    "\n",
+    "def sum_and_product(x, y):\n",
+    "    return (x + y),(x * y)\n",
+    "\n",
+    "sp = sum_and_product(2, 3)\n",
+    "s, p = sum_and_product(5, 10)\n",
+    "\n",
+    "x, y = 1, 2\n",
+    "x, y = y, x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "e7d0199f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "no grade for Kate!\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "empty_dict = {}\n",
+    "empty_dict2 = dict()\n",
+    "grades = {\"Joel\" : 80, \"Tim\" : 95 }\n",
+    "joels_grade = grades[\"Joel\"]\n",
+    "\n",
+    "try:\n",
+    "    kates_grade = grades[\"Kate\"]\n",
+    "except KeyError:\n",
+    "    print (\"no grade for Kate!\")\n",
+    "    \n",
+    "joel_has_grade = \"Joel\" in grades\n",
+    "kate_has_grade = \"Kate\"in grades\n",
+    "\n",
+    "joels_grade = grades.get(\"Joel\", 0)\n",
+    "kates_grade = grades.get(\"kate\", 0)\n",
+    "no_ones_grade = grades.get(\"No One\")\n",
+    "\n",
+    "grades[\"Tim\"] = 99\n",
+    "grades[\"Kate\"] = 100\n",
+    "num_students = len(grades)\n",
+    "\n",
+    "tweet = {\n",
+    "    \"user\" : \"joelgrus\",\n",
+    "    \"text\" : \"Data Science is Awesome\",\n",
+    "    \"retweet_count\" : 100,\n",
+    "    \"hashtags\" : [\"#data\", \"#science\", \"#datascience\", \"#awesome\", \"#yolo\"]\n",
+    "    \n",
+    " }\n",
+    "\n",
+    "tweet_keys = tweet.keys()\n",
+    "tweet_values = tweet.values()\n",
+    "tweet_items = tweet.items()\n",
+    "\n",
+    "\"user\" in tweet_keys\n",
+    "\"user\" in tweet\n",
+    "\"joelgrus\" in tweet_values"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "edb8f821",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "word_counts = {}\n",
+    "for word in 'document':\n",
+    "    if word in word_counts:\n",
+    "        word_counts[word] += 1\n",
+    "    else:\n",
+    "        word_counts[word] = 1\n",
+    "        \n",
+    "word_counts = {}\n",
+    "for word in 'document':\n",
+    "    try:\n",
+    "        word_counts[word] = 1\n",
+    "    except KeyError:\n",
+    "        word_counts[word] = 1\n",
+    "\n",
+    "word_counts = {}\n",
+    "for word in 'document':\n",
+    "    previous_count = word_counts.get(word, 0)\n",
+    "    word_counts[word] = previous_count + 1\n",
+    "    \n",
+    "from collections import defaultdict\n",
+    "\n",
+    "word_counts = defaultdict(int)\n",
+    "for word in 'document':\n",
+    "    word_counts[word] += 1\n",
+    "    \n",
+    "dd_list = defaultdict(list)\n",
+    "dd_list[2].append(1)\n",
+    "\n",
+    "dd_dict = defaultdict(dict)\n",
+    "dd_dict[\"Joel\"][\"City\"] = \"Seattle\"\n",
+    "\n",
+    "dd_pair = defaultdict(lambda: [0, 0])\n",
+    "dd_pair[2][1] = 1\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "19eec4fe",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "d 1\n",
+      "o 1\n",
+      "c 1\n",
+      "u 1\n",
+      "m 1\n",
+      "e 1\n",
+      "n 1\n",
+      "t 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "from collections import Counter\n",
+    "c = Counter([0, 1, 2, 0])\n",
+    "\n",
+    "word_counts = Counter('document')\n",
+    "\n",
+    "for word, count in word_counts.most_common(10):\n",
+    "    print (word, count)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "48c81aef",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "hundreds_of_other_words = [\"afbafa\", \"ahafhafh\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "52f63e22",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s = set()\n",
+    "s.add(1)\n",
+    "s.add(2)\n",
+    "s.add(2)\n",
+    "x = len(s)\n",
+    "y = 2 in s\n",
+    "z = 3 in s\n",
+    "\n",
+    "stopwords_list = [\"a\",\"an\",\"at\"] + hundreds_of_other_words + [\"yet\", \"you\"]\n",
+    "\n",
+    "\"zip\" in stopwords_list\n",
+    "stopwords_set = set(stopwords_list)\n",
+    "\"zip\" in stopwords_set\n",
+    "\n",
+    "item_list = [1, 2, 3, 1, 2, 3]\n",
+    "num_items = len(item_list)\n",
+    "item_set = set(item_list)\n",
+    "num_distinct_items = len(item_set)\n",
+    "distinct_item_list = list(item_set)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
